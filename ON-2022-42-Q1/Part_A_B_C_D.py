@@ -20,3 +20,8 @@ def SortDescending():
                 Animals[y]=Animals[y+1]
                 Animals[y+1]=temp
 
+#PartD(i)
+#Call the procedure SortDescending to sort the items in the Animals array into descending order with each animal name in different line
+SortDescending()
+for animals in Animals:
+    print(animals)
