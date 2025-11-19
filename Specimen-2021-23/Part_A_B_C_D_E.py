@@ -20,4 +20,14 @@ def InsertionSort():
 
 
 #PartC
+#Procedure to output all the items in TheData array. It should use iteration. 
+def output(Array):
+    for items in Array:
+        print(items)
+OutputArray=output(TheData)
+
+
+print(OutputArray)
+
+#PartD
 
