@@ -29,5 +29,7 @@ OutputArray=output(TheData)
 
 print(OutputArray)
 
-#PartD
+#PartD (i)
+#Show data in TheData array before sorting and after sorting using subroutines in part B and C
+
 
