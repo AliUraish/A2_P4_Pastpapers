@@ -37,3 +37,16 @@ print(sorted)
 
 #PartD (ii)
 #Its about testing my project and pasting the screenshot of the output in evidence document. 
+
+#PartE(i)
+#Make a searching program for array TheData in a parameter value to search through the array
+def search(value):
+    global MyData
+    for index in range(len(TheData)):
+        if TheData[index]==value:
+            print("Found")
+    else:
+        print("Not Found")
+
+#PartE(ii)
+#Test the searching program with 8 and 9
