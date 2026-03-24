@@ -1,2 +1,5 @@
-arraydata=[10, 5, 6, 7, 1, 12, 13, 15, 21, 8]
-
+import random
+arraydata=[[0]*10 for i in range(10)]
+for i in range(10):
+    for j in range(10):
+        arraydata[i][j]=random.randint(0,100)
