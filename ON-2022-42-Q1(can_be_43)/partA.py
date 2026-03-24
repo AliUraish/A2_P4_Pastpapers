@@ -42,3 +42,5 @@ def printarray():
     for x in range(0, number_of_jobs):
         print(jobs[x][0], jobs[x][1])
 
+insertionsort()
+printarray()
