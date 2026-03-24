@@ -16,3 +16,10 @@ def AddJob(jobnumber, priority):
         jobs[number_of_jobs]=[jobnumber, priority]
         print("Added")
         Number_of_jobs+=1
+
+Initialise()
+AddJob(12,10)
+AddJob(526,9)
+AddJob(33,8)
+AddJob(12,9)
+AddJob(78,1)
