@@ -35,3 +35,10 @@ def insertionsort():
             x=x-1
         jobs[x][0]=job1
         jobs[x][1]=job2
+
+
+def printarray():
+    global jobs, number_of_jobs
+    for x in range(0, number_of_jobs):
+        print(jobs[x][0], jobs[x][1])
+
