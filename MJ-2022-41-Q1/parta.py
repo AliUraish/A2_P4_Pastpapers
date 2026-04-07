@@ -52,3 +52,12 @@ def ArrangeHighScores(name, score):
                 count=count+1
             break      
 
+ArrangeHighScores(name, score)
+
+def WriteTopTen():
+    global FileData
+    File=open("HighScores.txt", "w")
+    for i in range(11):
+        File.write(FileData[i][0]+""+ str(FileData[i][1])+"\n")
+    File.close()
+
