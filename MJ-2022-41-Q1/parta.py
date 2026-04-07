@@ -22,3 +22,33 @@ OutputHighScores()
 
 
 
+name=input("Enter a name: ")
+while len(name)!=3:
+    print("Invalid input")
+    name=input("Enter a name: ")
+
+score=int(input("Enter a score: "))
+while score<1 or score>100000:
+    print("Invalid input")
+    score=int(input("Enter a score: "))
+
+
+def ArrangeHighScores(name, score):
+    global FileData
+    for i in range(0, 10):
+        if score>FileData[i][1]:
+            Temp1=FileData[i][0]
+            Temp2=FileData[i][1]
+            FileData[i][0]=name
+            FileData[i][1]=score
+            count=i+1
+            while(count<10):
+                secondname=FileData[count][0]
+                secondscore=FileData[count][1]
+                FileData[count][0]=Temp1
+                FileData[count][1]=Temp2
+                Temp1=secondname
+                Temp2=secondscore
+                count=count+1
+            break      
+
