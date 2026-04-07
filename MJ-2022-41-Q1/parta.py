@@ -17,3 +17,8 @@ def OutputHighScores():
     for i in range(11):
         print(FileData[i][0], FileData[i][1])
     
+ReadHighScores()
+OutputHighScores()
+
+
+
