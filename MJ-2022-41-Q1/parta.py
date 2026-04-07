@@ -12,3 +12,8 @@ def ReadHighScores():
     except FileNotFoundError:
         print("File not found")
 
+def OutputHighScores():
+    global FileData
+    for i in range(11):
+        print(FileData[i][0], FileData[i][1])
+    
