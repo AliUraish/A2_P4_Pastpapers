@@ -25,3 +25,16 @@ def FindValue():
 ReadFile()
 print("The number appears",FindValue(),"times")
 
+
+
+def BubbleSort():
+    global DataArray
+    for i in range(0, len(DataArray)-1):
+        for j in range(0, len(DataArray)-1):
+            if DataArray[j]>DataArray[j+1]:
+                temp=DataArray[j]
+                DataArray[j]=DataArray[j+1]
+                DataArray[j+1]=temp
+    return DataArray
+
+BubbleSort()
