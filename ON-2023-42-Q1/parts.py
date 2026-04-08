@@ -30,3 +30,25 @@ def ReadData():
         File.close()
     except FileNotFoundError:
         print("File not found")
+
+
+def PopVowel():
+    global StackVowel, VowelTop, StackConsonant, ConsonantTop
+    if VowelTop-1>=0:
+        VowelTop=VowelTop-1
+        popped=StackVowel[VowelTop]
+        del StackVowel[-1]
+        return popped
+    else:
+        return "No Data"
+
+def PopConsonent():
+    global StackVowel, VowelTop, StackConsonant, ConsonantTop
+    if ConsonantTop-1>=0:
+        ConsonantTop=ConsonantTop-1
+        popped=StackConsonant[ConsonantTop]
+        del StackConsonant[-1]
+        return popped
+    else:
+        return "No Data"
+
