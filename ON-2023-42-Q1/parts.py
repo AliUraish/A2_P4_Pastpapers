@@ -75,7 +75,7 @@ for x in range(0, 5):
             else:
                 print("No vowels left")
         elif Choice == "consonant":       
-            DataAccessed = PopConsonant()
+            DataAccessed = PopConsonent()
             if DataAccessed != "No data":
                 Letters = Letters + DataAccessed
                 Flag = True
