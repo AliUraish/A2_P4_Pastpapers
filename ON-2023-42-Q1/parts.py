@@ -1,3 +1,6 @@
+from enum import Flag
+
+
 StackVowel=[] #string 100
 StackConsonant=[] #string 100
 
@@ -52,3 +55,33 @@ def PopConsonent():
     else:
         return "No Data"
 
+
+
+VowelTop = 0
+ConsonantTop = 0
+ReadData()
+Letters = ""
+Flag = False
+
+for x in range(0, 5):
+    Flag = False
+    while Flag == False:
+        Choice = input("Vowel or Consonant: ").lower()
+        if Choice == "vowel":
+            DataAccessed = PopVowel()
+            if DataAccessed != "No data":
+                Letters = Letters + DataAccessed
+                Flag = True
+            else:
+                print("No vowels left")
+        elif Choice == "consonant":       
+            DataAccessed = PopConsonant()
+            if DataAccessed != "No data":
+                Letters = Letters + DataAccessed
+                Flag = True
+            else:
+                print("No consonants left")
+        else:                             
+            print("Invalid choice")
+
+print(Letters)
