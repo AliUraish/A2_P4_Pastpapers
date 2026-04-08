@@ -12,5 +12,14 @@ def PushAnimal(data):
         AnimalTopPointer=AnimalTopPointer+1
         return True
 
+
+def PopAnimal():
+    if AnimalTopPointer==0:
+        return ""
+    else:
+        ReturnData=Animal[AnimalTopPointer-1]
+        AnimalTopPointer=AnimalTopPointer-1
+        return ReturnData
+
         
 
